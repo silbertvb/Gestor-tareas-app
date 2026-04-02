@@ -1,0 +1,22 @@
+# Dependencias
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Variables de entorno (seguridad)
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+
+# Archivos de bloqueo (se regeneran)
+package-lock.json
+backend/package-lock.json
+frontend/package-lock.json
+
+# Builds
+/build
+/dist
+backend/dist
+frontend/build
