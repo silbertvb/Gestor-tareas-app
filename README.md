@@ -16,8 +16,6 @@ Aplicación web para gestión de tareas con **React** en el frontend y **Node.js
   - [4. Configurar la Base de Datos con Docker](#4-configurar-la-base-de-datos-con-docker)
 - [Endpoints de la API](#endpoints-de-la-api)
 - [Estructura del Proyecto](#estructura-del-proyecto)
-- [Capturas de Pantalla](#capturas-de-pantalla)
-- [Autor](#autor)
 
 ---
 
@@ -153,3 +151,37 @@ INSERT INTO tasks (title, description) VALUES
 | `POST`   | `/api/tasks`     | Crear una nueva tarea          |
 | `PUT`    | `/api/tasks/:id` | Actualizar una tarea existente |
 | `DELETE` | `/api/tasks/:id` | Eliminar una tarea             |
+
+
+## Estructura del Proyecto
+
+Gestor-tareas-app/
+├── backend/
+│   ├── src/
+│   │   ├── controllers/
+│   │   │   └── tasks.controllers.js   # Lógica de negocio
+│   │   ├── routes/
+│   │   │   └── tasks.routes.js        # Definición de rutas
+│   │   ├── db.js                       # Conexión a PostgreSQL
+│   │   └── index.js                    # Servidor Express
+│   ├── database/
+│   │   └── db.sql                      # Estructura de BD
+│   ├── .env.example                    # Plantilla de variables
+│   └── package.json
+├── frontend/
+│   ├── public/
+│   │   └── index.html                  # Página principal
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── TaskForm.js             # Formulario de tareas
+│   │   │   ├── TaskItem.js             # Tarea individual
+│   │   │   └── TaskList.js             # Lista de tareas
+│   │   ├── services/
+│   │   │   └── taskService.js          # Conexión con API
+│   │   ├── App.js                      # Componente principal
+│   │   ├── App.css                     # Estilos principales
+│   │   ├── index.css                   # Estilos globales
+│   │   └── index.js                    # Punto de entrada
+│   └── package.json
+└── README.md                           # Este archivo
+
