@@ -6,6 +6,8 @@ export const getTasks = async (req, res) => {
         // ORDER BY id ASC para asegurar que siempre vengan ordenadas por ID de forma ascendente.
         const result = await pool.query('SELECT * FROM tasks ORDER BY id ASC');
         res.json(result.rows); // Devuelve todass las tareas 
+        
+        // controla cualquier error con un mensaje de error genérico con un código 500.
     } catch (error) {
         console.error(error);
         res.status(500).json({message: 'Error al obtener las tareas'});
