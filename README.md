@@ -117,10 +117,10 @@ npm start
 ```bash
 # Crear y ejecutar el contenedor PostgreSQL
 docker run --name postgres-tareas \
-  -e POSTGRES_USER=postgres \
+  -e POSTGRES_USER=         \
   -e POSTGRES_PASSWORD=     \
-  -e POSTGRES_DB=tareas_db \
-  -p 5432:5432 \
+  -e POSTGRES_DB=tareas_db  \
+  -p 5432:5432              \
   -d postgres:latest
 
 # Crear la tabla tasks
