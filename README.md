@@ -155,6 +155,7 @@ INSERT INTO tasks (title, description) VALUES
 
 ## Estructura del Proyecto
 
+```shell
 Gestor-tareas-app/
 ├── backend/
 │   ├── src/
@@ -184,4 +185,4 @@ Gestor-tareas-app/
 │   │   └── index.js                    # Punto de entrada
 │   └── package.json
 └── README.md                           # Este archivo
-
+```
