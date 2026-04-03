@@ -157,32 +157,46 @@ INSERT INTO tasks (title, description) VALUES
 
 ```shell
 Gestor-tareas-app/
+│
 ├── backend/
 │   ├── src/
 │   │   ├── controllers/
-│   │   │   └── tasks.controllers.js   # Lógica de negocio
+│   │   │   └── tasks.controllers.js
 │   │   ├── routes/
-│   │   │   └── tasks.routes.js        # Definición de rutas
-│   │   ├── db.js                       # Conexión a PostgreSQL
-│   │   └── index.js                    # Servidor Express
+│   │   │   └── tasks.routes.js
+│   │   ├── db.js
+│   │   └── index.js
 │   ├── database/
-│   │   └── db.sql                      # Estructura de BD
-│   ├── .env.example                    # Plantilla de variables
+│   │   └── db.sql
+│   ├── .env.example
 │   └── package.json
+│
 ├── frontend/
 │   ├── public/
-│   │   └── index.html                  # Página principal
+│   │   └── index.html
 │   ├── src/
 │   │   ├── components/
-│   │   │   ├── TaskForm.js             # Formulario de tareas
-│   │   │   ├── TaskItem.js             # Tarea individual
-│   │   │   └── TaskList.js             # Lista de tareas
+│   │   │   ├── TaskForm.js
+│   │   │   ├── TaskItem.js
+│   │   │   └── TaskList.js
 │   │   ├── services/
-│   │   │   └── taskService.js          # Conexión con API
-│   │   ├── App.js                      # Componente principal
-│   │   ├── App.css                     # Estilos principales
-│   │   ├── index.css                   # Estilos globales
-│   │   └── index.js                    # Punto de entrada
+│   │   │   └── taskService.js
+│   │   ├── App.js
+│   │   ├── App.css
+│   │   ├── index.css
+│   │   └── index.js
 │   └── package.json
-└── README.md                           # Este archivo
-```
+│
+├── screenshots/
+│   ├── 01-Contenedor docker corriendo con la BD tareas en el puerto 5432.png
+│   ├── 02-GET obteniendo todas las tareas.png
+│   ├── 03-GET por ID especifico.png
+│   ├── 04-GET por ID no existente.png
+│   ├── 05-POST creando una nueva tarea.png
+│   ├── 06-PUT actualizando tarea 1.png
+│   ├── 07-DELETE eliminando tarea 4.png
+│   ├── 08-Lista final actualizada utilizando un ORDER BY con id ASC.png
+│   ├── 09-Gestor de Tareas con una ultima tarea creada y descripción tarea 3 actualizada.png
+│   
+│
+└── README.md
